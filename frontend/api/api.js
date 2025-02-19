@@ -1,6 +1,9 @@
+import "dotenv/config";
 import axios from "axios"; // Importa a biblioteca Axios para fazer requisições HTTP
 
-const URL = "http://localhost:3000"; // Define a URL base da API
+const {NODE_ENV}= process.env;
+const URL = NODE_ENV === "development" ? "http://localhost:3000/api" : "/api"
+// // Define a URL base da API
 
 // Faz uma requisição GET para obter os dados de artistas do backend
 const responseArtists = await axios.get(`${URL}/artists`);
