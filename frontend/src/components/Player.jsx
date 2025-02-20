@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Importa o componente FontAwesomeIcon para ícones
 import { faCirclePlay, faCirclePause, faBackwardStep, faForwardStep } from "@fortawesome/free-solid-svg-icons"; // Importa ícones de play, pause, voltar e avançar
 import { Link } from "react-router-dom"; // Importa o componente Link para navegação sem recarregar a página
-import { useRef, useEffect } from "react"; // Importa useRef (para referências a elementos DOM) e useEffect (para efeitos colaterais)
+import { useRef, useEffect, useState } from "react"; // Importa useRef (para referências a elementos DOM) e useEffect (para efeitos colaterais)
 
 const formatTime = (timeInSeconds) => {
   // Formata o tempo em segundos para o formato "mm:ss"
