@@ -1,4 +1,4 @@
-import "dotenv/config";
+
 import axios from "axios"; // Importa a biblioteca Axios para fazer requisições HTTP
 
 // const {NODE_ENV}= process.env;
